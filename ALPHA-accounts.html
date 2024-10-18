@@ -1,0 +1,131 @@
+<html>
+<head>
+  <title>Famous Bank Heists</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      perspective: 1000px;
+    }
+
+    .cube {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      transform-style: preserve-3d;
+      animation: rotate 10s linear infinite;
+    }
+
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      opacity: 0.8;
+      background-color: rgba(255, 255, 255, 0.1);
+      backface-visibility: hidden;
+    }
+
+    .face.front {
+      transform: translateZ(150px);
+      background-color: #ff0;
+    }
+
+    .face.back {
+      transform: translateZ(-150px);
+      background-color: #f00;
+    }
+
+    .face.left {
+      transform: rotateY(-90deg) translateZ(150px);
+      background-color: #0f0;
+    }
+
+    .face.right {
+      transform: rotateY(90deg) translateZ(150px);
+      background-color: #00f;
+    }
+
+    .face.top {
+      transform: rotateX(90deg) translateZ(150px);
+      background-color: #f0f;
+    }
+
+    .face.bottom {
+      transform: rotateX(-90deg) translateZ(150px);
+      background-color: #0ff;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .joker {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 100px;
+      height: 100px;
+      background: url(https://i.imgur.com/BzvZYF8.png) center center no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face left"></div>
+      <div class="face right"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="content">
+      <h1>**TIRBET24 ACCOUNT FOR SALE**</h1>
+      <hr>
+      <p>1.DATE==///////////////////////19/10/2024</p>
+      <p>2.NUMBER==////////////////////////// 5698320*.</p>
+      <p>3.LOCATION==/////////////////////////////mrezga rond point khayem.</p>
+    </div>
+  </div>
+</body>
+</html>
